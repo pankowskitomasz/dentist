@@ -1,0 +1,27 @@
+$backdrop__filter--privacy: blur(5px);
+$bg__blend--soft: soft-light;
+$bg__classes:
+    "error",
+    "comingsoon",
+    "privacy";
+$bg__comingsoon-img: "../img/chair.jpg";
+$bg__error-img: "../img/error.jpg";
+$bg__privacy-img: "../img/privacy.jpg";
+$bg__aoa:
+    $bg__error-img,
+    $bg__comingsoon-img,
+    $bg__privacy-img;
+$body__min-height: 100%;
+$color__bg-1: rgb(138, 162, 206);
+$color__shadow: #0f61b4;
+$color__transparent: transparent;
+$font-logo__family: 'Barlow';
+$font-logo__size: 24px;
+$font-main__family: 'Mulish';
+$font-main__size: 16px;
+$header__height: 74px;
+$section__min-height: 100vh;
+$text__shadow: 0 0 4px $color__shadow;
+$theme-colors: (
+  "primary": #0f61b4,
+);

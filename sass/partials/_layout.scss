@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    min-height: $body__min-height;
+    overflow-x: hidden;
+    width: 100%;
+}
+header{
+    min-height: $header__height;
+}
+section{
+    min-height: $section__min-height;
+}
