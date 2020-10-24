@@ -1,0 +1,50 @@
+@include aoa-bg-series($bg__classes,$bg__aoa);
+
+*{
+    font-family: $font-main__family;
+}
+
+%bg-blend{
+    @include background-blend($bg__blend--soft, $color__bg-1);
+    @include calc-param(min-height, $section__min-height, $header__height);
+}
+
+.comingsoon{
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.error{
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.font{
+    &-logo{
+        @include set-font-params($font-logo__family,$font-logo__size);
+    }
+    &-menu{
+        @include set-font-params($font-main__family,$font-main__size);
+    }
+}
+.navbar{
+    &-toggler{
+        &-icon{
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+        }
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}

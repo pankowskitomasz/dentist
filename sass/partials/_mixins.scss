@@ -1,0 +1,50 @@
+@mixin background-blend($typeA, $colorA){
+    background-blend-mode: #{$typeA};
+    background-color: #{$colorA};
+}
+
+@mixin calc-param($paramA,$baseA,$valA){
+    #{$paramA}: calc( #{$baseA} - #{$valA} );
+    #{$paramA}: -o-calc( #{$baseA} - #{$valA} );
+    #{$paramA}: -moz-calc( #{$baseA} - #{$valA} );
+    #{$paramA}: -webkit-calc( #{$baseA} - #{$valA} );
+}
+
+@mixin set-background($imgA:"",$imgURL:0,$positionA:"top left",$sizeA:"cover",$attachA:"fixed"){
+    background:{
+        attachment:#{$attachA};
+        @if($imgURL==1){
+            image: #{$imgA};
+        }
+        @else{
+            image: url(#{$imgA});
+        }
+        position: #{$positionA};
+        repeat: no-repeat;
+        size: #{$sizeA};
+    }
+}
+
+@mixin set-bg-series($classNameA,$imgArrayA:'',$imgURL:0,$positionA:"top left",$sizeA:"cover",$attachA:"fixed"){
+    @if($classNameA != ""){
+        @for $i from 1 through length($imgArrayA){
+            .#{$classNameA}-s#{$i} {
+                @include set-background(nth($imgArrayA,$i),$imgURL,$positionA,$sizeA,$attachA);
+            }
+        }
+    }
+}
+
+@mixin aoa-bg-series($classArrayA:'',$imgAoA:'',$imgURL:0,$positionA:"top left",$sizeA:"cover",$attachA:"fixed"){
+    @if (length($classArrayA) == length($imgAoA)){
+        @for $i from 1 through length($classArrayA){
+            @include set-bg-series(nth($classArrayA,$i),nth($imgAoA,$i),$imgURL,$positionA,$sizeA,$attachA);
+        }
+    }
+}
+
+@mixin set-font-params($familyA,$sizeA){
+    font-family: $familyA;
+    font-size: $sizeA;
+}
+
