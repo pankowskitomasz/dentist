@@ -5,33 +5,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Dentist | Page not found</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Dentist | We create beautiful smiles</title>
 </head>
 <body>
     <header class="container-fluid px-0">
-        <nav class="navbar navbar-expand-md nabvar-dark bg-primary">
-            <a href="index.html" class="navbar-brand">
-                <img src="img/navbar_logo.png" alt="logo"/>
+        <div class="row py-2 bg-info mx-0 px-4">
+            <p class="text-white small mb-0 mt-1 d-none d-sm-inline">
+                Open Monday - Friday from 8:00am - 6:00pm
+            </p>
+            <ul class="list-inline ml-auto mb-0">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com"
+                        class="text-white h5 mx-2"
+                        rel="noopener noreferer">
+                        <span class="fa fa-facebook"></span>
+                    </a>                        
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com"
+                        class="text-white h5 mx-2"
+                        rel="noopener noreferer">
+                        <span class="fa fa-twitter"></span>
+                    </a>                        
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-md nabvar-dark bg-secondary text-shadow">
+            <a href="index.html" class="navbar-brand pt-0">
+                <img src="img/navbar_logo.png" class="d-inline-block" alt="logo"/>
                 <span class="navbar-text font-logo text-white">
                     Dentist
                 </span>
             </a>
+            <button class="navbar-toggler" data-toggle="collapse"
+                data-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ml-auto initialism font-weight-bold font-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="patient.html" class="nav-link">Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointment.html" class="nav-link">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">
+                            <span class="fa fa-user"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="comingsoon-s1 align-items-center d-flex">
+        <section class="index-s1 d-flex bg-info shadow-lg border-bottom border-dark">
             <div class="row justify-content-center mx-0 w-100">
-                <div class="col-10 col-sm-6 text-center text-white text-shadow">
-                    <h1 class=" display-4 font-weight-bold font-logo">Opening soon</h1>
-                    <p class="lead">
-                        Hi, we are not ready yet, however we are staring soon.<br> 
-                        Please visit us again in a while.
+                <div class="col-12 p-0">
+                    <div class="carousel slide" data-ride="caro usel" id="index-s1-crs">
+                        <ol class="carousel-indicators">
+                            <li data-target="#index-s1-crs" data-slide-to="0" class="active"></li>
+                            <li data-target="#index-s1-crs" data-slide-to="1"></li>
+                            <li data-target="#index-s1-crs" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/index-s1-crs/slide-1.jpg" alt="image" class="img-top-section">
+                                <div class="carousel-caption h4 text-shadow">
+                                    Creating Beautiful Smiles…
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/index-s1-crs/slide-2.jpg" alt="image" class="img-top-section">
+                                <div class="carousel-caption h4 text-shadow">
+                                    Smile, it lets your teeth breathe…
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/index-s1-crs/slide-3.jpg" alt="image" class="img-top-section">
+                                <div class="carousel-caption h4 text-shadow">
+                                    A dentist gets to the root of the problem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s2 container d-flex py-5">
+            <div class="row justify-content-center mx-3 w-100 mt-5">
+                <div class="col-12 col-md-6 mb-5">
+                    <h2 class="h3">Why Dental Health Is Important?</h2>
+                    <p class="text-gray">
+                        Our teeth have such an important role to play in our lives. 
+                        They help us chew and digest food, they help us to talk and 
+                        speak clearly and they also give our face its shape.
                     </p>
+                </div>
+                <div class="col-12 col-md-6 minh-80vh">
+                    <ul class="accordion list-unstyled mx-md-5" id="index-s2-accordion">
+                        <li class="mb-2">
+                            <a href="#accordion-1" 
+                                class="text-dark"
+                                data-toggle="collapse">
+                                <span class="fa fa-chevron-down"></span>
+                                Keeping our teeth for life
+                            </a>
+                            <div class="collapse text-gray pl-4 pt-3" 
+                                id="accordion-1" 
+                                data-parent="#index-s2-accordion">
+                                By brushing our teeth twice daily, maintaining a low-in-sugar 
+                                diet and regularly visits to our dental professional, we can 
+                                help reduce the risk of such diseases like dental decay and 
+                                gum disease – both of which can result in tooth loss.
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#accordion-2" 
+                                class="text-dark"
+                                data-toggle="collapse">
+                                <span class="fa fa-chevron-down"></span>
+                                Reducing the risk of disease
+                            </a>
+                            <div class="collapse text-gray pl-4 pt-3" 
+                                id="accordion-2" 
+                                data-parent="#index-s2-accordion">
+                                Research has found that the number of teeth we have is a strongly 
+                                linked to how long we will live. Those with 20 teeth or more at 
+                                the age of 70 had a considerably higher chance of living longer 
+                                than those with less than 20 teeth.
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#accordion-3" 
+                                class="text-dark"
+                                data-toggle="collapse">
+                                <span class="fa fa-chevron-down"></span>
+                                Maintaining our appearance
+                            </a>
+                            <div class="collapse text-gray pl-4 pt-3" 
+                                id="accordion-3" 
+                                data-parent="#index-s2-accordion">
+                                By brushing our teeth twice daily, maintaining a low-in-sugar diet 
+                                and regularly visits to our dental professional, we can help reduce 
+                                the risk of such diseases like dental decay and gum disease – both 
+                                of which can result in tooth loss.
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#accordion-4" 
+                                class="text-dark"
+                                data-toggle="collapse">
+                                <span class="fa fa-chevron-down"></span>
+                                Having a healthy life
+                            </a>
+                            <div class="collapse text-gray pl-4 pt-3" 
+                                id="accordion-4" 
+                                data-parent="#index-s2-accordion">
+                                Research has found that the number of teeth we have is a strongly linked 
+                                to how long we will live. Those with 20 teeth or more at the age of 70 
+                                had a considerably higher chance of living longer than those with less 
+                                than 20 teeth.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
+        <section class="index-s3 container-fluid d-flex bg-light minh-50vh p-0">
+            <div class="row mx-0 w-100">
+                <div class="col-12 col-md-6 py-5 text-secondary">
+                    <h4 class=" text-center font-weight-bold mb-5">Check-up &amp; Clean</h4>
+                    <ul class="list-unstyled mx-5">
+                        <li class="mb-3">
+                            <span class="fa fa-check-square-o"></span>
+                            Gum disease evaluation
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa fa-check-square-o"></span>
+                            Tooth decay risk assessment
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa fa-check-square-o"></span>
+                            Evaluation of your bite and skeletal balance
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa fa-check-square-o"></span>
+                            Gum disease evaluation
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa fa-check-square-o"></span>
+                            Tooth decay risk assessment
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-none d-md-block minh-50vh index-sub-s1">
+                </div>
+            </div>
+        </section>       
+        <section class="index-s4 container-fluid d-flex bg-info minh-50vh p-0">
+            <div class="row mx-0 w-100">
+                <div class="col-md-6 d-none d-md-block minh-50vh index-sub-s2">
+                </div>
+                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center">
+                    <div class="text-white text-center">
+                        <h4 class="font-weight-bold mb-5">Contact us</h4>
+                        <ul class="list-unstyled mx-5">
+                            <li>
+                                <span class="fa fa-phone-square"></span>
+                                Phone Registration
+                            </li>
+                            <li class="mb-3 ml-3 small">
+                                +(01) 879 345 123
+                            </li>
+                            <li>
+                                <span class="fa fa-envelope-square"></span>
+                                Email Registration
+                            </li>
+                            <li class="mb-3 ml-3 small">
+                                registration&#64;dentist.dt
+                            </li>
+                            <li>
+                                <span class="fa fa-ambulance"></span>
+                                Emergency contact (phone)
+                            </li>
+                            <li class="mb-3 ml-3 small">
+                                +(01) 849 315 443
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-fluid bg-primary text-center text-white p-3">
+    <footer class="container-fluid bg-secondary text-center text-white p-3">
         <small class="my-0">
             Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
             <a class="text-white" href="privacy.html">Privacy policy</a>

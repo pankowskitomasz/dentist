@@ -1,27 +1,57 @@
 $backdrop__filter--privacy: blur(5px);
 $bg__blend--soft: soft-light;
+$bg__appointment-img:
+    "../img/pain.jpg",
+    "../img/lobby.jpg";
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "index-sub",
+    "patient-sub",
+    "appointment-sub",
+    "contact-sub",
+    "user-sub";
 $bg__comingsoon-img: "../img/chair.jpg";
+$bg__contact-img: "../img/lobby.jpg";
 $bg__error-img: "../img/error.jpg";
+$bg__index-img: "../img/examination.png";
+$bg__index-sub-img: 
+    "../img/dentist.jpg",
+    "../img/lobby.jpg";
+$bg__patient-sub-img:
+    "../img/diagnosis.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__user-img:
+    "../img/patient.jpg";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__index-sub-img,
+    $bg__patient-sub-img,
+    $bg__appointment-img,
+    $bg__contact-img,
+    $bg__user-img;
 $body__min-height: 100%;
+$body__min-width: 360px;
+$border__bottom--border: 1px solid #0f61b4;
 $color__bg-1: rgb(138, 162, 206);
+$color__bg-2: #147de7;
 $color__shadow: #0f61b4;
+$color__shadow-dark: #333;
 $color__transparent: transparent;
 $font-logo__family: 'Barlow';
 $font-logo__size: 24px;
 $font-main__family: 'Mulish';
 $font-main__size: 16px;
 $header__height: 74px;
+$header__height-f: 115px;
 $section__min-height: 100vh;
-$text__shadow: 0 0 4px $color__shadow;
+$text__shadow: 0 0 4px $color__shadow-dark;
 $theme-colors: (
-  "primary": #0f61b4,
+  "primary": #fff,
+  "gray": #666,
+  "info": $color__bg-2,
+  "secondary": #0f61b4,
 );

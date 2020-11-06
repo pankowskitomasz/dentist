@@ -9,21 +9,44 @@
     @include calc-param(min-height, $section__min-height, $header__height);
 }
 
+%bg-fixed{
+    background-attachment: scroll;
+    background-position: center;
+}
+
+%top-section-height{
+    @include calc-param(min-height, $section__min-height, $header__height-f);
+}
+
+.appointment{
+    &-s1{
+        @extend %top-section-height;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-fixed;
+        }
+        &-s2{
+            @extend %bg-fixed;
+        }
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
     }
 }
-.error{
+.contact{
     &-s1{
-        @extend %bg-blend;
+        @extend %top-section-height;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-fixed;
+        }
     }
 }
-.privacy{
-    &-container{
-        background-color: $color__transparent !important;
-        backdrop-filter: $backdrop__filter--privacy;
-    }
+.error{
     &-s1{
         @extend %bg-blend;
     }
@@ -36,6 +59,49 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.index{
+    &-s1{
+        @extend %top-section-height;
+    }
+    &-s2{
+        @include set-background($bg__index-img,0,"bottom center","inherit","scroll");
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-fixed;
+        }
+        &-s2{
+            @extend %bg-fixed;
+        }
+    }
+}
+.img{
+    &-top{
+        &-section{
+            @include calc-param(height, $section__min-height, $header__height-f);
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
+.line{
+    &-box{
+        border:none !important;
+        border-bottom: $border__bottom--border !important;
+        box-shadow: none!important;
+    }
+}
+.minh{
+    &-50vh{
+        min-height: 50vh;
+    }
+    &-80vh{
+        min-height: 80vh;
+    }
+    &-100vh{
+        min-height: 100vh;
+    }
+}
 .navbar{
     &-toggler{
         &-icon{
@@ -43,8 +109,40 @@
         }
     }
 }
+.patient{
+    &-s1{
+        @extend %top-section-height;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-fixed;
+        }
+    }
+}
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
     }
+}
+.user{
+    &-s1{
+        @extend %top-section-height;
+    }
+    &-sub{
+        &-s1{
+            @extend %bg-fixed;
+        }
+    }
+}
+textarea{
+    resize: none !important;
 }
