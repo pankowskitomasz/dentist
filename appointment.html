@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Dentist | Appointment</title>
+</head>
+<body>
+    <header class="container-fluid px-0">
+        <div class="row py-2 bg-info mx-0 px-4">
+            <p class="text-white small mb-0 mt-1 d-none d-sm-inline">
+                Open Monday - Friday from 8:00am - 6:00pm
+            </p>
+            <ul class="list-inline ml-auto mb-0">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com"
+                        class="text-white h5 mx-2"
+                        rel="noopener noreferer">
+                        <span class="fa fa-facebook"></span>
+                    </a>                        
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com"
+                        class="text-white h5 mx-2"
+                        rel="noopener noreferer">
+                        <span class="fa fa-twitter"></span>
+                    </a>                        
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-md nabvar-dark bg-secondary text-shadow">
+            <a href="index.html" class="navbar-brand pt-0">
+                <img src="img/navbar_logo.png" class="d-inline-block" alt="logo"/>
+                <span class="navbar-text font-logo text-white">
+                    Dentist
+                </span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse"
+                data-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ml-auto initialism font-weight-bold font-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="patient.html" class="nav-link">Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointment.html" class="nav-link">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">
+                            <span class="fa fa-user"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>    
+        <section class="appointment-s1 container-fluid d-flex bg-info p-0 shadow-lg">
+            <div class="row mx-0 w-100">
+                <div class="col-md-6 d-none d-md-block minh-50vh appointment-sub-s1">
+                </div>
+                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center justify-content-center">
+                    <div class="text-white text-center text-md-left px-5 px-md-0 pl-md-4">
+                        <h4 class="font-weight-bold mb-3">Need emergency help?</h4>
+                        <p class="lead">
+                            Don't fight with pain alone! Contact with us immidately 
+                            by phone or online form below.
+                        </p>
+                        <a href="#contact-form" class="btn btn-outline-primary mt-3">
+                            Go to form
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="appointments-s2 container-fluid d-flex align-items-center justify-content-center py-5">
+            <div class="row w-100" id="contact-form">
+                <div class="col-10 col-sm-8 col-md-6 card mx-auto p-0 text-gray shadow shadow-lg border border-secondary">
+                    <div class="card-header bg-secondary text-white font-weight-bold">
+                        <span class="fa fa-calendar-plus-o"></span>
+                        New Appointment
+                    </div>
+                    <div class="card-body">
+                        <form class="px-1 px-md-3" autocomplete="off">
+                            <label class="text-secondary font-weight-bold">
+                                <span class="fa fa-address-card-o mr-1"></span>
+                                Full Name
+                            </label>
+                            <input type="text" 
+                                class="form-control line-box rounded-0 mb-3" 
+                                maxlength="80"
+                                name="fname"
+                                placeholder="Full name">
+                            <label class="text-secondary font-weight-bold">
+                                <span class="fa fa-phone-square mr-1"></span>
+                                Phone
+                            </label>
+                            <input type="tel" 
+                                class="form-control line-box rounded-0 mb-3" 
+                                maxlength="14"
+                                name="fphone"
+                                placeholder="Phone number">
+                            <label class="text-secondary font-weight-bold">
+                                <span class="fa fa-envelope-square mr-1"></span>
+                                Email
+                            </label>
+                            <input type="email" 
+                                class="form-control line-box rounded-0 mb-3" 
+                                maxlength="100"
+                                name="femail"
+                                placeholder="Email">
+                            <label class="text-secondary font-weight-bold">
+                                <span class="fa fa-calendar mr-1"></span>
+                                Date
+                            </label>
+                            <input type="datetime-local"
+                            class="form-control mb-3 border-secondary" 
+                                name="fdate">                            
+                            <label class="text-secondary font-weight-bold">
+                                <span class="fa fa-sticky-note-o mr-1"></span>
+                                Description
+                            </label>
+                            <textarea class="form-control border-secondary"
+                                maxlength="250"></textarea>
+                            <div class="w-100 text-right mt-3">
+                                <input type="reset" class="btn btn-outline-secondary" value="Clear">
+                                <input type="submit" class="btn btn-outline-secondary" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="appointments-s3 container-fluid d-flex bg-info minh-50vh p-0 shadow">
+            <div class="row mx-0 w-100">
+                <div class="col-md-6 d-none d-md-block minh-50vh appointment-sub-s2">
+                </div>
+                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center">
+                    <div class="text-white text-center">
+                        <h4 class="font-weight-bold mb-5">Contact us</h4>
+                        <ul class="list-unstyled mx-5">
+                            <li>
+                                <span class="fa fa-phone-square"></span>
+                                Phone Registration
+                            </li>
+                            <li class="mb-3 ml-3 small">
+                                +(01) 879 345 123
+                            </li>
+                            <li>
+                                <span class="fa fa-envelope-square"></span>
+                                Email Registration
+                            </li>
+                            <li class="mb-3 ml-3 small">
+                                registration&#64;dentist.dt
+                            </li>
+                            <li>
+                                <span class="fa fa-ambulance"></span>
+                                Emergency contact (phone)
+                            </li>
+                            <li class="mb-3 ml-3 small">
+                                +(01) 849 315 443
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid bg-secondary text-center text-white p-3">
+        <small class="my-0">
+            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            <a class="text-white" href="privacy.html">Privacy policy</a>
+        </small>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

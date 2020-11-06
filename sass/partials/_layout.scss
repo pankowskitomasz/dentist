@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body,html{
+    min-width: $body__min-width;
     min-height: $body__min-height;
     overflow-x: hidden;
     width: 100%;
