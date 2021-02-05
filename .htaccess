@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule error error.php [NC,L]
+RewriteRule confirm confirm.php [NC,L]
+RewriteRule user user.php [NC,L]

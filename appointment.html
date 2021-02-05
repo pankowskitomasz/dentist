@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Dentist | Appointment</title>
 </head>
 <body>
@@ -57,7 +56,7 @@
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="user.html" class="nav-link">
+                        <a href="user.php" class="nav-link">
                             <span class="fa fa-user"></span>
                         </a>
                     </li>
@@ -66,12 +65,12 @@
         </nav>
     </header>
     <main>    
-        <section class="appointment-s1 container-fluid d-flex bg-info p-0 shadow-lg">
+        <section class="appointment-s1 container-fluid d-flex bg-info p-0 shadow-lg minh-30vh">
             <div class="row mx-0 w-100">
-                <div class="col-md-6 d-none d-md-block minh-50vh appointment-sub-s1">
+                <div class="col-md-6 d-none d-md-block minh-30vh appointment-sub-s1">
                 </div>
                 <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center justify-content-center">
-                    <div class="text-white text-center text-md-left px-5 px-md-0 pl-md-4">
+                    <div class="text-white text-center px-5 px-md-0 pl-md-4">
                         <h4 class="font-weight-bold mb-3">Need emergency help?</h4>
                         <p class="lead">
                             Don't fight with pain alone! Contact with us immidately 
@@ -84,15 +83,17 @@
                 </div>
             </div>
         </section>
-        <section class="appointments-s2 container-fluid d-flex align-items-center justify-content-center py-5">
+        <section class="appointments-s2 container-fluid d-flex align-items-center justify-content-center py-5 minh-50vh">
             <div class="row w-100" id="contact-form">
-                <div class="col-10 col-sm-8 col-md-6 card mx-auto p-0 text-gray shadow shadow-lg border border-secondary">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-5 card mx-auto p-0 text-gray shadow shadow-lg border border-secondary">
                     <div class="card-header bg-secondary text-white font-weight-bold">
                         <span class="fa fa-calendar-plus-o"></span>
                         New Appointment
                     </div>
                     <div class="card-body">
-                        <form class="px-1 px-md-3" autocomplete="off">
+                        <form class="px-1 px-md-3" autocomplete="off"
+                            action="error.php"
+                            method="POST">
                             <label class="text-secondary font-weight-bold">
                                 <span class="fa fa-address-card-o mr-1"></span>
                                 Full Name
@@ -118,20 +119,14 @@
                             <input type="email" 
                                 class="form-control line-box rounded-0 mb-3" 
                                 maxlength="100"
-                                name="femail"
-                                placeholder="Email">
-                            <label class="text-secondary font-weight-bold">
-                                <span class="fa fa-calendar mr-1"></span>
-                                Date
-                            </label>
-                            <input type="datetime-local"
-                            class="form-control mb-3 border-secondary" 
-                                name="fdate">                            
+                                name="fmail"
+                                placeholder="Email">                           
                             <label class="text-secondary font-weight-bold">
                                 <span class="fa fa-sticky-note-o mr-1"></span>
                                 Description
                             </label>
                             <textarea class="form-control border-secondary"
+                                name="fmsg"
                                 maxlength="250"></textarea>
                             <div class="w-100 text-right mt-3">
                                 <input type="reset" class="btn btn-outline-secondary" value="Clear">
@@ -142,11 +137,11 @@
                 </div>
             </div>
         </section>    
-        <section class="appointments-s3 container-fluid d-flex bg-info minh-50vh p-0 shadow">
+        <section class="appointments-s3 container-fluid d-flex bg-info minh-30vh p-0 shadow">
             <div class="row mx-0 w-100">
-                <div class="col-md-6 d-none d-md-block minh-50vh appointment-sub-s2">
+                <div class="col-md-6 d-none d-md-block minh-30vh appointment-sub-s2">
                 </div>
-                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center minh-30vh">
                     <div class="text-white text-center">
                         <h4 class="font-weight-bold mb-5">Contact us</h4>
                         <ul class="list-unstyled mx-5">
@@ -179,11 +174,49 @@
     </main>
     <footer class="container-fluid bg-secondary text-center text-white p-3">
         <small class="my-0">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
             <a class="text-white" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal" id="privacyModal">
+        <div class="modal-dialog h-100 d-flex align-items-center">
+            <div class="modal-content border-green p-2">
+                <div class="modal-header text-center">
+                    <h4 class="font-header text-secondary font-weight-bold">GPDR Declaration</h4>
+                    <button 
+                        data-target="#privacyModal"
+                        data-dismiss="modal"
+                        class="close text-secondary">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="initialism">
+                        This website is a <span class="text-danger"> demo version </span> of real website,  It doesn't collect and process,
+                        in long term meaning (longer than needed for website operation during visitor's
+                        presence), any user (visitor) data.
+                    </p>
+                    <p class="initialism pt-2">
+                        All information collected during visitor's 
+                        presence on this website is used only for technical purposes, required for 
+                        correct operation of website or demonstration purposes related to technical 
+                        mechanisms and presentation of its operation... 
+                        <a href="privacy.html" class="text-secondary font-weight-bold">More about privacy</a>
+                    </p>                        
+                    <p class="initialism pt-2">
+                        If you accept privacy policy please click button "accept". If you 
+                        refuse it, leave page by closing it in your web browser, please.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-dark mx-auto"
+                        onclick="acceptPrivacyPolicy()">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="js/main.min.js"></script>
 </body>
 </html>

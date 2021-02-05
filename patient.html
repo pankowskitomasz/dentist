@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Dentist | Patient</title>
 </head>
 <body>
@@ -57,7 +56,7 @@
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="user.html" class="nav-link">
+                        <a href="user.php" class="nav-link">
                             <span class="fa fa-user"></span>
                         </a>
                     </li>
@@ -66,12 +65,12 @@
         </nav>
     </header>
     <main>    
-        <section class="patient-s1 container-fluid d-flex bg-info p-0">
+        <section class="patient-s1 container-fluid d-flex bg-info p-0 minh-50vh">
             <div class="row mx-0 w-100">
                 <div class="col-md-6 d-none d-md-block minh-50vh patient-sub-s1">
                 </div>
-                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center justify-content-center">
-                    <div class="text-white text-center text-md-left px-5 px-md-0 pl-md-4">
+                <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center justify-content-center minh-50vh">
+                    <div class="text-white text-center px-5 px-md-0 pl-md-4">
                         <h4 class="font-weight-bold mb-3">New Patient?</h4>
                         <p class="lead">
                             We go above and beyond to provide patients with a calming, 
@@ -85,50 +84,92 @@
                 </div>
             </div>
         </section>
-        <section class="patient-s2 container d-flex py-5">
-            <div class="row justify-content-center mx-3 w-100">
-                <div class="col-12 col-md-6 mb-3 text-center text-md-left">
-                    <h2 class="h4 pt-3 pb-3">What to Expect During Your First Visit?</h2>
-                    <p class="text-gray pb-2">
-                        Our dentist will thoroughly examine your mouth, including 
-                        taking oral photographs and x-rays, and then discuss your 
-                        results to help you better understand your oral health needs.
-                    </p>
-                    <p class="text-gray pb-2">
-                        We will provide you with written treatment details, 
-                        estimates, and payment plan options.
-                    </p>
+        <section class="patient-s2 container-fluid d-flex minh-50vh align-items-center p-0">
+            <div class="row justify-content-center mx-0 w-100">
+                <div class="col-12 col-md-6 mb-3 text-center text-md-left d-flex align-items-center">
+                    <div class="p-5">
+                        <h2 class="h4 pt-3 pb-3">What to Expect During Your First Visit?</h2>
+                        <p class="text-gray pb-2">
+                            Our dentist will thoroughly examine your mouth, including 
+                            taking oral photographs and x-rays, and then discuss your 
+                            results to help you better understand your oral health needs.
+                        </p>
+                        <p class="text-gray pb-2">
+                            We will provide you with written treatment details, 
+                            estimates, and payment plan options.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 text-gray py-3 pl-5 bg-light">
-                    <div class="mb-3">
-                        <h4 class="text-dark">Stationary services:</h4>
-                        <ul>
-                            <li>Tooth Decay Risk Assessment</li>
-                            <li>Gum Disease Evaluation</li>
-                            <li>Bite Function Analysis</li>
-                            <li>2D &amp; 3D Digital X-Rays</li>
-                            <li>Photographs of your smile, teeth, and gums</li>
-                        </ul>
-                    </div>    
-                    <div class="mb-3">
-                        <h4 class="text-dark">Remote services:</h4>
-                        <ul>
-                            <li>Online consultations</li>
-                            <li>Night help in emergency cases</li>
-                            <li>Home visits</li>
-                        </ul>
-                    </div> 
+                <div class="col-12 col-md-6 text-gray py-3 pl-5 bg-light minh-50vh d-flex align-items-center">
+                    <div class="p-5">
+                        <div class="mb-3">
+                            <h4 class="text-dark">Stationary services:</h4>
+                            <ul>
+                                <li>Tooth Decay Risk Assessment</li>
+                                <li>Gum Disease Evaluation</li>
+                                <li>Bite Function Analysis</li>
+                                <li>2D &amp; 3D Digital X-Rays</li>
+                                <li>Photographs of your smile, teeth, and gums</li>
+                            </ul>
+                        </div>    
+                        <div class="mb-3">
+                            <h4 class="text-dark">Remote services:</h4>
+                            <ul>
+                                <li>Online consultations</li>
+                                <li>Night help in emergency cases</li>
+                                <li>Home visits</li>
+                            </ul>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </section>     
     </main>
     <footer class="container-fluid bg-secondary text-center text-white p-3">
         <small class="my-0">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
             <a class="text-white" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal" id="privacyModal">
+        <div class="modal-dialog h-100 d-flex align-items-center">
+            <div class="modal-content border-green p-2">
+                <div class="modal-header text-center">
+                    <h4 class="font-header text-secondary font-weight-bold">GPDR Declaration</h4>
+                    <button 
+                        data-target="#privacyModal"
+                        data-dismiss="modal"
+                        class="close text-secondary">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="initialism">
+                        This website is a <span class="text-danger"> demo version </span> of real website,  It doesn't collect and process,
+                        in long term meaning (longer than needed for website operation during visitor's
+                        presence), any user (visitor) data.
+                    </p>
+                    <p class="initialism pt-2">
+                        All information collected during visitor's 
+                        presence on this website is used only for technical purposes, required for 
+                        correct operation of website or demonstration purposes related to technical 
+                        mechanisms and presentation of its operation... 
+                        <a href="privacy.html" class="text-secondary font-weight-bold">More about privacy</a>
+                    </p>                        
+                    <p class="initialism pt-2">
+                        If you accept privacy policy please click button "accept". If you 
+                        refuse it, leave page by closing it in your web browser, please.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-dark mx-auto"
+                        onclick="acceptPrivacyPolicy()">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="js/main.min.js"></script>
 </body>
 </html>

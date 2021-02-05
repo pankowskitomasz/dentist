@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Dentist | We create beautiful smiles</title>
 </head>
 <body>
@@ -57,7 +56,7 @@
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="user.html" class="nav-link">
+                        <a href="user.php" class="nav-link">
                             <span class="fa fa-user"></span>
                         </a>
                     </li>
@@ -66,7 +65,7 @@
         </nav>
     </header>
     <main>
-        <section class="index-s1 d-flex bg-info shadow-lg border-bottom border-dark">
+        <section class="index-s1 d-flex bg-info shadow-lg border-bottom border-dark minh-30vh">
             <div class="row justify-content-center mx-0 w-100">
                 <div class="col-12 p-0">
                     <div class="carousel slide" data-ride="caro usel" id="index-s1-crs">
@@ -99,7 +98,7 @@
                 </div>
             </div>
         </section>
-        <section class="index-s2 container d-flex py-5">
+        <section class="index-s2 container d-flex py-5 minh-30vh align-items-center">
             <div class="row justify-content-center mx-3 w-100 mt-5">
                 <div class="col-12 col-md-6 mb-5">
                     <h2 class="h3">Why Dental Health Is Important?</h2>
@@ -109,7 +108,7 @@
                         speak clearly and they also give our face its shape.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 minh-80vh">
+                <div class="col-12 col-md-6">
                     <ul class="accordion list-unstyled mx-md-5" id="index-s2-accordion">
                         <li class="mb-2">
                             <a href="#accordion-1" 
@@ -179,7 +178,7 @@
                 </div>
             </div>
         </section>        
-        <section class="index-s3 container-fluid d-flex bg-light minh-50vh p-0">
+        <section class="index-s3 container-fluid d-flex bg-light p-0 minh-30vh border-top">
             <div class="row mx-0 w-100">
                 <div class="col-12 col-md-6 py-5 text-secondary">
                     <h4 class=" text-center font-weight-bold mb-5">Check-up &amp; Clean</h4>
@@ -206,13 +205,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 d-none d-md-block minh-50vh index-sub-s1">
+                <div class="col-md-6 d-none d-md-block minh-30vh index-sub-s1">
                 </div>
             </div>
         </section>       
-        <section class="index-s4 container-fluid d-flex bg-info minh-50vh p-0">
+        <section class="index-s4 container-fluid d-flex bg-info minh-30vh p-0">
             <div class="row mx-0 w-100">
-                <div class="col-md-6 d-none d-md-block minh-50vh index-sub-s2">
+                <div class="col-md-6 d-none d-md-block minh-30vh index-sub-s2">
                 </div>
                 <div class="col-12 col-md-6 py-5 d-flex align-items-center justify-content-center">
                     <div class="text-white text-center">
@@ -247,11 +246,49 @@
     </main>
     <footer class="container-fluid bg-secondary text-center text-white p-3">
         <small class="my-0">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
             <a class="text-white" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal" id="privacyModal">
+        <div class="modal-dialog h-100 d-flex align-items-center">
+            <div class="modal-content border-green p-2">
+                <div class="modal-header text-center">
+                    <h4 class="font-header text-secondary font-weight-bold">GPDR Declaration</h4>
+                    <button 
+                        data-target="#privacyModal"
+                        data-dismiss="modal"
+                        class="close text-secondary">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="initialism">
+                        This website is a <span class="text-danger"> demo version </span> of real website,  It doesn't collect and process,
+                        in long term meaning (longer than needed for website operation during visitor's
+                        presence), any user (visitor) data.
+                    </p>
+                    <p class="initialism pt-2">
+                        All information collected during visitor's 
+                        presence on this website is used only for technical purposes, required for 
+                        correct operation of website or demonstration purposes related to technical 
+                        mechanisms and presentation of its operation... 
+                        <a href="privacy.html" class="text-secondary font-weight-bold">More about privacy</a>
+                    </p>                        
+                    <p class="initialism pt-2">
+                        If you accept privacy policy please click button "accept". If you 
+                        refuse it, leave page by closing it in your web browser, please.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-dark mx-auto"
+                        onclick="acceptPrivacyPolicy()">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="js/main.min.js"></script>
 </body>
 </html>
