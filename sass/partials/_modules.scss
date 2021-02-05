@@ -59,6 +59,13 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.form{
+    &-control{
+        &:focus{
+            border-color: $color__bg-2 !important;
+        }
+    }
+}
 .index{
     &-s1{
         @extend %top-section-height;
@@ -77,8 +84,9 @@
 }
 .img{
     &-top{
-        &-section{
-            @include calc-param(height, $section__min-height, $header__height-f);
+        &-section{            
+            height: $img-top-section__height;
+            min-height: $img-top-section__min-height;
             object-fit: cover;
             width: 100%;
         }
@@ -92,8 +100,14 @@
     }
 }
 .minh{
+    &-30vh{
+        min-height: 30vh;
+    }
     &-50vh{
         min-height: 50vh;
+    }
+    &-70vh{
+        min-height: 70vh;
     }
     &-80vh{
         min-height: 80vh;
